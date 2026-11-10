@@ -1,18 +1,26 @@
-# Estamparia Brasil DTF — v6
+# Estamparia Brasil DTF · V3
 
-Site estático, responsivo, sem backend, sem pagamentos e sem dependências externas.
+Site estático publicado no GitHub Pages, sem backend, pagamentos, rastreamento ou armazenamento de dados do formulário.
 
 ## Conteúdo
-- index.html: página única com catálogo, serviços, empresas e licitações, formulário de orçamento.
-- favicon.svg: ícone próprio.
-- robots.txt: indexação pública.
+- `index.html`: página principal, catálogo de seis categorias, serviços, atendimento corporativo, portfólio preparado e orçamento.
+- `styles.css` e `script.js`: apresentação responsiva, menu móvel, seleção de produto e mensagem de orçamento.
+- `photo-*.avif`: sete fotografias demonstrativas hospedadas localmente (aproximadamente 185 KB no total).
+- `creditos.html`: fotógrafos, fontes originais e licença comercial gratuita Pexels.
+- `favicon.svg` e `robots.txt`: preservados do projeto anterior.
+- `QA-V3.md` e `form.test.cjs`: evidências e testes reproduzíveis.
 
 ## Publicação
-GitHub Pages: enviar estes arquivos para a raiz de um repositório público e habilitar Settings > Pages > Deploy from a branch > main > /(root).
-Alternativa: enviar o conteúdo da pasta a uma hospedagem estática gratuita com upload manual.
+O projeto mantém o GitHub Pages já existente, a partir da branch `main` e da raiz do repositório. A V3 foi preparada em branch própria, preservando o histórico anterior.
 
-## Teste no celular
-Abrir a URL HTTPS publicada, preencher os campos obrigatórios e tocar em 'Abrir orçamento no WhatsApp'. O site prepara a mensagem; o cliente confirma o envio.
+## Formulário e privacidade
+O formulário mantém os 11 campos da versão anterior. O botão abre uma mensagem preenchida para `https://wa.me/5511991162998`; o visitante revisa e confirma o envio no aplicativo. Não há envio automático, banco de dados, coleta de arquivos ou pagamento no site.
 
-## Limites
-Fotos/ilustrações são demonstrativas; substituir por fotos autorizadas quando disponíveis. Não há processamento nem armazenamento de dados do formulário no site. Verificar disponibilidade de produtos, prazos e atendimento a cada edital.
+## Imagens e conteúdo comercial
+As imagens são demonstrativas e não representam clientes, instalações ou trabalhos da empresa. Não há depoimentos, certificações ou métricas inventadas. Endereço físico e horários não foram acrescentados sem confirmação. Modelos, materiais, condições, valores e prazos são confirmados no atendimento.
+
+## Atualizar o portfólio
+A seção `#trabalhos` está reservada para fotos reais autorizadas. Ao recebê-las, substitua o estado informativo por imagens com descrição da peça e autorização de uso. Não reutilize fotos do catálogo como prova de trabalhos realizados.
+
+## Verificação
+Execute `node form.test.cjs`. Consulte `QA-V3.md` para o escopo da verificação visual e funcional.
